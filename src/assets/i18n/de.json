@@ -1,0 +1,40 @@
+{
+    "Login" : {
+        
+    "login": "Einloggen",
+    "placeholderEmail": "E-Mail-Adresse oder Telefonnummer",
+    "placeholderPassword": "Passwort",
+    "remember": "Benutzerdaten merken",
+    "errorEmail": "Bitte geben Sie Ihre E-Mail-Adresse oder Ihr Telefon ein",
+    "errorPw": "Bitte geben Sie Ihr Passwort ein"
+    
+
+    },
+
+    "Billing" : {
+        
+        "Confirm": "Bestätigen Sie Ihre Angaben:",
+        "placeholderName": "Vollständiger Name",
+        "placeholderCar": "Kartennummer",
+        "placeholderZip": "Postleitzahl",
+        "ConfirmButton": "Bestätigen",
+        "errorName": "Bitte geben Sie Ihren vollständigen Namen ein",
+        "errorKarte": "Bitte geben Sie Ihre Kartennummer ein",
+        "errorMonth": "Bitte wählen Sie Ihren Ablaufmonat",
+        "errorYear": "Bitte wählen Sie das Ablaufjahr Ihrer Karte",
+        "errorCV": "Bitte geben Sie Ihren CVV / CVC ein",
+        "errorZip": "Bitte geben Sie Ihre Postleitzahl ein"
+        },
+        "Verification" : {
+        
+            "SelectOption": "Um die Sicherheit Ihres Kontos zu gewährleisten, benötigen wir zusätzliche Maßnahmen. Wählen Sie bitte Ihren Regierungs-ID-Typ aus:",
+            "Passport": "Passport",
+            "IDCard": "Government issued ID"
+            },
+        "Finish" : {
+        
+            "verifyng": "Überprüfung...",
+            "congrats": "Herzliche Glückwünsche! Sie sind jetzt verifiziert",
+            "redirect": "Umleiten..."
+            }
+}

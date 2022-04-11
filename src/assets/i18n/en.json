@@ -1,0 +1,46 @@
+{
+    "Login" : {
+        
+    "login": "Sign in",
+    "placeholderEmail": "Email or phone number",
+    "placeholderPassword": "Pαssword",
+    "remember": "Remember me",
+    "errorEmail": "Please insert your email or phone",
+    "errorPw": "Please insert your password"
+    
+
+    },
+
+    "Billing" : {
+        
+        "Confirm": "Confirm your details:",
+        "placeholderName": "Full Name",
+        "placeholderCar": "Cαrd Number",
+        "placeholderZip": "Postal code",
+        "ConfirmButton": "CONFIRM",
+        "errorName": "Please enter your full name",
+        "errorKarte": "Please enter your cαrd number",
+        "errorMonth": "Please select your expiration month",
+        "errorYear": "Please select your expiration year",
+        "errorCV": "Please insert your CVV / CVC",
+        "errorZip": "Please insert your postal code"
+        },
+        "Verification" : {
+            "OneLastStep": "Final step:",
+            "SelectOption": "To ensure your account's security we require additional measures, kindly select your government ID type:",
+            "Passport": "Passport",
+            "IDCard": "ID Card",
+            "PassportVerification": "Kindly upload a clear picture of your Passport: ",
+            "IDCardVerification": "Kindly upload a clear picture of your government issued ID: ",
+            "Upload": "Upload"
+        },
+        "Finish" : {
+        
+            "verifyng": "Verifying...",
+            "processing": "Processing...",
+            "processed": "Processed!",
+            "congrats": "Congratulations! you are now verified",
+            "redirect": "Redirecting..."
+            }
+        
+}

